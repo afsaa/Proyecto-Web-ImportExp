@@ -1,0 +1,163 @@
+/*----Barra de navegación----*/
+.navbar{
+  background-color: rgba(51, 122, 183, 0.5)!important;
+}
+.navbar-brand img{
+  height: 25px;
+}
+/*.navbar-brand:hover{
+  color: black!important;
+}*/
+.navbar-items{
+  color: white!important;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+.navbar-items:hover{
+  color: dimgrey!important;
+}
+/*---------------------------*/
+/*----------Slideshow--------*/
+.carousel-indicators{
+  bottom:-15px;
+}
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+}
+
+.carousel-indicators .active{
+  width: 15px;
+  height: 15px;
+  background-color: #337ab7;
+}
+
+.carousel-control{
+  color: #337ab7;
+  text-shadow: none;
+  background-image: none;
+}
+
+.carousel-control:hover{
+  color: #337ab7;
+}
+
+.carousel-control.left{
+  color: #337ab7;
+  background-image: none;
+  background-color: white;
+}
+
+.carousel-control.right{
+  color: #337ab7;
+  background-image: none;
+  background-color: white;
+}
+/*---------------------------*/
+/*----------Titulos----------*/
+h1{
+  font-family: 'BebasNeueRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+/*---------------------------*/
+/*---------Parrafos----------*/
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+}
+/*---------------------------*/
+/*----------ScrollSpy--------*/
+body{
+  position: relative;
+}
+.center-block {
+  width: 75%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#Contacto{
+  margin-right: 0;
+  padding-top:50px;
+  height:100vh;
+  color: grey;
+  background-color: white;
+}
+#Contacto h1{
+  color: dimgrey;
+  font-weight: bold;
+}
+
+#Objective{
+  margin-right: 0;
+  padding-top:50px;
+  height:100vh;
+  color: grey;
+  background-color: white;
+}
+#Objective h1{
+  color: dimgrey;
+  font-weight: bold;
+}
+
+#Mision{
+  margin-right: 0;
+  padding-top:50px;
+  height:100vh;
+  color: grey;
+  background-color: white;
+}
+#Mision h1{
+  color: dimgrey;
+  font-weight: bold;
+}
+
+#Vision {
+  margin-right: 0;
+  padding-top:50px;
+  height:100vh;
+  color: grey;
+  background-color: white;
+}
+#Vision h1{
+  color: dimgrey;
+  font-weight: bold;
+}
+/*-------Centrar columna contacto-----------*/
+
+/*---------------------------*/
+/*-------Boton de subida-----*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 40px; /* Place the button at the bottom of the page */
+    right: 20px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #fff; /* Set a background color */
+    color: black!important; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 17px; /* Some padding */
+    border-radius: 20px; /* Rounded corners */
+    border: 1px solid black; /* Borde del boton */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/*---------------------------*/
+/*-------Pie de pagina-------*/
+footer{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+/*---------------------------*/
