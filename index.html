@@ -9,16 +9,68 @@
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
   <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+  <script asyn src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
+  <script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+  <!-- Carga de los elementos CSS mas importantes -->
+  <style>
+  /*----Barra de navegación----*/
+  .navbar{
+    background-color: rgba(51, 122, 183, 0.5)!important;
+  }
+  .navbar-brand img{
+    height: 25px;
+  }
+
+  .navbar-items{
+    color: white!important;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+  }
+  .navbar-items:hover{
+    color: dimgrey!important;
+  }
+  /*---------------------------*/
+  /*----------Slideshow--------*/
+  .carousel-indicators{
+    bottom:-15px;
+  }
+  .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+  }
+  .carousel-indicators .active{
+    width: 12px;
+    height: 12px;
+    background-color: #337ab7;
+  }
+  .carousel-control{
+    color: #337ab7;
+    text-shadow: none;
+    background-image: none;
+  }
+  .carousel-control:hover{
+    color: #337ab7;
+  }
+  .carousel-control.left{
+    color: #337ab7;
+    background-image: none;
+    background-color: white;
+  }
+  .carousel-control.right{
+    color: #337ab7;
+    background-image: none;
+    background-color: white;
+  }
+  </style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -81,6 +133,24 @@
     <span class="sr-only">Next</span>
   </a>
   </div>
+
+  <!-- Carga de los elementos CSS menos importantes -->
+  <noscript id="deferred-styles">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </noscript>
+  <script>
+    var loadDeferredStyles = function() {
+      var addStylesNode = document.getElementById("deferred-styles");
+      var replacement = document.createElement("div");
+      replacement.innerHTML = addStylesNode.textContent;
+      document.body.appendChild(replacement)
+      addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+    var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+        window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+    else window.addEventListener('load', loadDeferredStyles);
+  </script>
 
   <!-- Sección Misión -->
   <div class="container-fluid" id="Mision">
@@ -213,7 +283,7 @@
   <!-- **Scripts** -->
   <!-- WoW.JS -->
   <script src="js/wow.min.js"></script>
-  <script>
+  <script async>
       new WOW().init();
       // ---Boton de subida---
       window.onscroll = function() {
@@ -227,7 +297,6 @@
           document.getElementById("myBtn").style.display = "none";
         }
       }
-
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
         document.body.scrollTop = 0; // For Chrome, Safari and Opera
@@ -235,7 +304,7 @@
       }
     </script>
   <!-- Mapa de Google 1 -->
-  <script>
+  <script async>
       function myMap1() {
       var mapProp= {
           center:new google.maps.LatLng(51.508742,-0.120850),
@@ -245,7 +314,7 @@
       }
     </script>
   <!-- Mapa de Google 2 -->
-  <script>
+  <script async>
       function myMap2() {
       var mapProp= {
           center:new google.maps.LatLng(51.508742,-0.120850),
